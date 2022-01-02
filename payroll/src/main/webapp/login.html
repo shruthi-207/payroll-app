@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style type="text/css">
+		h1{
+			text-align: center;
+			 background: linear-gradient(to right, #a8c0ff, #3f2b96);
+			 color: white;
+			 font-family:Verdana;
+			 margin: 0%;
+		}
+				.container {
+					padding: 30px;
+					font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+					font-size: 20px;
+				}
+            input[type=button] {
+                background-color: blue;
+                color:white;
+                cursor: pointer;
+                padding: 2%;
+                text-align: center;
+                margin: 0 50% 0 45%;
+            }
+            button:hover {
+                opacity: 0.7;
+            }
+            input[type=text], input[type=password] {
+             width: 85%;
+             padding: 12px 12px;
+             display: inline-block;
+             margin-top: 8px;
+            }
+            .myform {
+          background-color:cornsilk;
+          margin: auto; 
+          margin-top:5%;
+          border: 1px solid black;
+           width: 25%; 
+		}
+		body
+		{
+		background: #a8b2ff;
+		}
+</style>
+</head>
+<body>
+<form action="http://localhost:8080/payroll/Dao" method="post">
+	<h1>XYZ CORPORATION</h1>
+	<h2 style="text-align:center; font-family:verdana;  font-size:30px">Employee and Payroll Management System</h2>
+        <div class="myform">
+        <h1>Login</h1>
+        <div class="container">
+        <label for="employee_id"><b>User ID</b></label>
+        <br>
+        <input type="text" placeholder="Enter ID" name="employee_id" id="employee_id" >
+        <br><br>
+        <label for="pwd"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="pwd" id="pwd" >
+        <br> <br>
+        <input type="radio" id="admin" value="Admin" name="usertype"> <label for="admin"><b>Admin </b></label><br>
+        <input type="radio" id="emp" value="Employee" name="usertype"> <label for="emp"><b>Employee </b></label><br><br>
+        <input type="hidden" value="login" name="action">
+        <input type="submit" value="Login" id="form"><br>
+        </div>
+    </div>
+</form>
+</body>
+</html>
